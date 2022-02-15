@@ -1,16 +1,16 @@
 import { AgnosticBreadcrumb, AgnosticGroupedFacet } from '@vue-storefront/core';
 
 export type OptionValue = {
-  id: number;
+  id: string;
   type: string;
   name: string;
   position: number;
   presentation: string;
-  optionTypeId: number;
+  optionTypeId: string;
 };
 
 export type OptionType = {
-  id: number;
+  id: string;
   type: string;
   name: string;
   position: number;
@@ -24,7 +24,7 @@ export type ImageStyle = {
 };
 
 export type Image = {
-  id: number;
+  id: string;
   styles: ImageStyle[];
 };
 
@@ -34,7 +34,7 @@ export type Property = {
 };
 
 export type ProductVariant = {
-  _id: number;
+  _id: string;
   _productId: number;
   _variantId: number;
   _description: string;
